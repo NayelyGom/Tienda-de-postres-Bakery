@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+        /*Variable para paleta de colores*/
+
+        --color-blanco:#ffffff;
+        --color-gris:#696969;
+        --color-naranja:#fdb822;
+        
+        /* Variables para fuentes */
+
+        --fuente-principal: 'Open Sans', sans-serif;
+        --fuente-secundaria: 'Roboto', sans-serif;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+/* Delimimtador de html*/
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 15px;
+    font-weight: 900;
+    
+}
+
+h2{
+    font-size: 13px;
+    font-weight: 300;
+}
+h3{
+    font-size: 17px;
+    font-weight: 800;
+}
+
+h4{
+    color: var(--color-naranja);
+    font-weight: 900;
+}
+
+h5{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--color-gris);
+    padding-bottom: 10px; /*espaciado inferior*/
+    text-align: center;
+}
+
+/*Aplicacion de estilo ID*/
+    
+
+#casilla{
+
+    background-color:var(--color-blanco) ;
+    color: var(--color-gris);   
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+   
+    
+}
+
+
+#casilla2{
+
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    background-image: url("../imagenes/pastel\ 3.png "); /*ingresar imagen como fondo*/ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center  right; /* posicion de la foto */
+    background-attachment: top;  /* para que la imagen quede congelada */
+}
+
+#post{
+    background-color: var(--color-blanco);
+}
+
+#post2{
+    background-color: var(--color-blanco);
+}
+
+#post2 img {
+    transition: all 0.5s ease-in-out;
+}
+
+#post2 img:hover {
+    transform: rotate(360deg) scale(0.8) skew(12deg) translate(95px,9px);
+    -webkit-transform: rotate(360deg) scale(0.8) skew(12deg) translate(95px,9px);
+    -moz-transform: rotate(360deg) scale(0.8) skew(12deg) translate(95px,9px);
+}
+
+#testimonio img {
+    border-radius: 320px 320px 320px 320px;
+}
+
+#eventos .columna{
+    border: 2px dashed rgba(255,175,80,0.53);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+#eventos img {
+    transition: all 0.5s ease-in-out; 
+}
+
+#eventos img:hover {
+    transform: rotate(360deg) scale(1.2) ;
+    -webkit-transform: rotate(360deg) scale(1.2) ;
+    -moz-transform: rotate(360deg) scale(1.2) ;
+}
+
+#pie {
+    background-color: #684f40;
+    color: var(--color-blanco);
+    padding-top: 45px;
+    padding-bottom: 45px;
+    line-height: 36px;
+
+}
+
+#pie a {
+    color: #ffffff;
+    text-decoration: none; /*quitar el subrayado del enlace*/
+    margin-left: 10px;
+}
+
+#pie .redes-sociales i {
+    font-size: 32px;
+}
+
+#pie .fila {          /*alinea de forma porporcional hacia la derecha, centro y izquierdo*/          
+    justify-content: space-between; /*permite alinear los contenidos de la caja fila (hijas)*/
+}
+
+#casilla3{
+
+    background-color: #fDF1F1;
+}
+
+#casilla3 img {
+    transition: all 0.5s ease-in-out; 
+}
+
+#casilla3 img:hover{
+    transform: rotate(360deg) scale(0.8) skew(-14deg) translate(-22px,9px);
+    -webkit-transform: rotate(360deg) scale(0.8) skew(-14deg) translate(-22px,9px);
+    -moz-transform: rotate(360deg) scale(0.8) skew(-14deg) translate(-22px,9px);
+}
+
+#testimonio {
+    background-color: #fDF1F1;
+    text-align: center;
+}
+
+#testimonio img {
+    transition: all 0.5s ease-in-out;
+}
+
+
+#testimonio img:hover {
+    transform: scale(120%);
+    filter: grayscale(80%);
+}
+
+#eventos {
+    text-align: center;
+}
+
+
+#producto {
+    background-image: url("../imagenes/postre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#mejorescupcakes {
+    background-image: url("../imagenes/imagen\ horizontal-05.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Nuestrossabores {
+    background-color: #fDF1F1;
+    border-radius: 320px 320px 320px 320px;
+
+}
+
+#Nuestrossabores img {
+    transition: all 0.5s ease-in-out; 
+}
+
+#Nuestrossabores img:hover {
+    transform: rotate(180deg) scale(1.3) ;
+    -webkit-transform: rotate(180deg) scale(1.3) ;
+    -moz-transform: rotate(180deg) scale(1.3) ;
+}
+
+#historia{
+
+    text-align: center;
+    background-color: #fff;
+    color: var(--color-gris);
+}
+
+#historia p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+    font-weight: 800;
+    color: #684f40; 
+}
+
+#historia .fila{
+    display: flex; /* Activa flexbox */
+    flex-direction: row; /* Coloca las cajas hijo uno al lado del otro - forma de fila.*/
+}
+
+
+#historia .columna{
+    flex-basis: 0px; /* QWuita el ancho de la columna */
+    flex-grow: 1; /* Agranda proporcionalmente el ancho de las columnas segun el numero total de columnas existentes*/
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#historia .columna { 
+    width: 50%; /* Ajustar ancho de la imagen al tamaño de su caja padre*/
+    height: auto; /* Ajusta la altura de la iamgen proporcionalmente al ancho */
+}
+
+#historia img {
+    transition: all 0.5s ease-in-out; 
+}
+
+#historia img:hover {
+    transform: rotate(360deg) scale(0.9) skew(-15deg) translate(95px,9px);
+    -webkit-transform: rotate(360deg) scale(0.9) skew(-15deg) translate(95px,9px);
+    -moz-transform: rotate(360deg) scale(0.9) skew(-15deg) translate(95px,9px);
+
+}
+
+#barra-superior{
+    background-color: #684f40;
+    color: var(--color-blanco);
+    padding-top: 5;
+    padding-bottom: 5   ;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#menu_segunda_hoja {
+    background-image: url("../imagenes/header-1-menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#barra-ubicacion{
+    text-align: center;
+    color: var(--color-blanco);
+    background-color: var(--color-naranja);
+}
+
+/* Aplicacion de estilo Class */
+
+.seccion{
+
+    padding-top: 20px; /* Espaciado del borde superior */
+    padding-bottom: 20px; /* Espaciado del borde inferior */
+}
+
+.columna :hover {
+    background: #e3dfdf;
+}
+
+.seccion2{
+    padding-top: 90px; /* Espaciado del borde superior */
+    padding-bottom: 90px; /* Espaciado del borde inferior */
+}
+
+.seccion3 {
+    padding-top: 20px; /* Espaciado del borde superior */
+    padding-bottom: 20px; /* Espaciado del borde inferior */
+}
+
+.seccion4 {
+    padding-top: 20px; /* Espaciado del borde superior */
+    padding-bottom: 20px; /* Espaciado del borde inferior */
+}
+
+.seccion5 {
+
+    padding-top: 20px; /* Espaciado del borde superior */
+    padding-bottom: 20px; /* Espaciado del borde inferior */
+}
+
+.contenedor{
+
+    /* Centrar su contenido en su caja padre */
+    max-width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fila{
+    display: flex; /* Activa flexbox */
+    flex-direction: row; /* Coloca las cajas hijo uno al lado del otro - forma de fila.*/
+}
+
+.columna{
+    flex-basis: 0px; /* Quita el ancho de la columna */
+    flex-grow: 1; /* Agranda proporcionalmente el ancho de las columnas segun el numero total de columnas existentes*/
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.columna a{ 
+    text-decoration: none;
+}
+
+.img_ajustarancho{ 
+    width: 100%; /* Ajustar ancho de la imagen al tamaño de su caja padre*/
+    height: auto; /* Ajusta la altura de la iamgen proporcionalmente al ancho */
+}
+
+.espaciado {
+    padding-top: 20px;  /* espacio parte arriba (espaciado superior) */
+    padding-bottom: 20px;  /* espacio parte abajo relleno (espaciado inferior) */ 
+}
+
+.texto-enorme {
+    font-size: 60px; /*tamaño de letra*/
+    font-weight: 500; /*grosor de letra*/
+    line-height: 1.5; /*interlineado entre caracteres*/
+}
+
+.texto-resaltado {
+    font-weight: 800;
+    color: #fdb822;
+    
+}
+
+.text-semibold {
+    color: var(--color-naranja);
+    font-weight: 600;
+}
+
+.text-blanquito{
+    color:#ffffff
+}
+
+.buscar{
+    position: absolute;
+    padding: 5px;
+}
+
+.correo{
+    font-size: 13px;
+}
+.correo a{
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding-left: 10x;
+    padding-right: 10px;
+}
+
+
+.redes a{
+    color: var(--color-blanco);
+    text-decoration: none;
+    letter-spacing: 10px;
+}
+
+
+    
+
+
+/* -----------------------
+Estilos para la creación de la barra de menu
+------------------------*/
+
+.logo{
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+.menu-barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.menu-opciones{
+    list-style-type: none; /* quitar la viñeta */
+}
+
+
+.menu-opciones a{
+    color: var(--color-gris);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.menu-items a{
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.menu-items li{
+    padding-top: 30px;
+}
+
+.menu-items a:hover {
+    color: var(--color-naranja);
+}
+
+.menu-items2{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.menu-items2 a:hover {
+    color: var(--color-naranja);
+}
+
+.menu-items2 li{
+    padding-top: 30px;
+
+}
+
+.menu-items2 a{
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.contenedor p{
+    text-align: center;
+}
